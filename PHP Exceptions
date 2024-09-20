@@ -1,3 +1,6 @@
+//In the example below, the type of exception is Exception and the variable name is $e.
+
+
 <?php
 function divide($dividend, $divisor) {
   if($divisor == 0) {
