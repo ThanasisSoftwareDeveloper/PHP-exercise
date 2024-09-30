@@ -78,7 +78,7 @@ class A {
 <?php
 class domain {
   protected static function getWebsiteName() {
-    return "W3Schools.com";
+    return "Hi";
   }
 }
 
