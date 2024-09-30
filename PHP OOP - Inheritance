@@ -5,7 +5,7 @@
 <body>
 
 <?php
-class Fruit {
+final class Fruit {
   public $name;
   public $color;
   public function __construct($name, $color) {
@@ -17,7 +17,7 @@ class Fruit {
   }
 }
 
-// Strawberry is inherited from Fruit
+// Strawberry is inherited from Fruit----> fatal error
 class Strawberry extends Fruit {
   public function message() {
     echo "Am I a fruit or a berry? "; 
