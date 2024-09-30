@@ -1,0 +1,43 @@
+// Static methods can be called directly - without creating an instance of the class first.
+
+// Static methods are declared with the static keyword:
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+class greeting {
+    public static function welcome() {
+      echo "Hi!";
+    }
+  }
+  
+  // Call static method
+  greeting::welcome(); // with "::" , without creating an instance of the class first
+?>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+class greeting {
+    public static function welcome() {
+      echo "Hi!";
+    }
+  
+    public function __construct() {
+      self::welcome(); //A static method can be accessed from a method in the same class using the self keyword and double colon (::)  
+    }
+  }
+  
+  new greeting();
+?>
+ 
+</body>
+</html>
